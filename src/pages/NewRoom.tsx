@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
-import googleIconImg from '../assets/images/google-icon.svg'
+
 
 import { Button } from '../components/button';
 
@@ -20,7 +20,7 @@ export function NewRoom() {
 	async function handleCreateRoom(event: FormEvent) {
 		event.preventDefault();
 
-		if (newRoom.trim() == '') {
+		if (newRoom.trim() === '') {
 			return;
 		}
 
